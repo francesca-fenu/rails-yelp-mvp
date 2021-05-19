@@ -10,8 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   </head>
-
-  <body>
-    <%= yield %>
-  </body>
+  <nav class="navbar navbar-expand-lg navbar-light p-3">
+    <a class="navbar-brand" href="/restaurants">Yelp 🍳</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/restaurants/new">Add Restaurant</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-2">
+    <body>
+      <%= yield %>
+    </body>
+  </div>
 </html>
